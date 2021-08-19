@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="container" prefHeight="500.0" prefWidth="700.0" styleClass="white-bg" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <TextField fx:id="id" layoutX="344.0" layoutY="216.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter ID" styleClass="text-field">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0" height="14.83" radius="8.4575" />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="pwd" layoutX="344.0" layoutY="275.0" prefHeight="35.0" prefWidth="300.0" promptText="Enter Password">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" color="#c6c0c0" height="14.83" radius="8.4575" />
+         </effect>
+      </PasswordField>
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="350.0" layoutY="343.0" onAction="#loginAction" prefHeight="35.0" prefWidth="138.0" ripplerFill="#2117e0" style="-fx-background-color: #2117e0;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="310.0" layoutY="394.0" />
+      <ImageView fitHeight="112.0" fitWidth="118.0" layoutX="335.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../야옹이.PNG" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="Regist" buttonType="RAISED" layoutX="500.0" layoutY="343.0" onMouseClicked="#open_registration_form" prefHeight="35.0" prefWidth="138.0" ripplerFill="WHITE" style="-fx-background-color: #2117e0;" text="Regist" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
